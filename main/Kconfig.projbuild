@@ -2,6 +2,7 @@ menu "Xiaozhi Assistant"
 
 config OTA_URL
     string "Default OTA URL"
+    default "http://47.97.244.51:16688/xiaozhi/ota/" if BOARD_TYPE_M5STACK_STOPWATCH
     default "https://api.tenclass.net/xiaozhi/ota/"
     help
         The application will access this URL to check for new firmwares and server address.
